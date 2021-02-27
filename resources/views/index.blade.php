@@ -10,8 +10,11 @@
 <a href="/admin/login">В админку</a>
 
 @foreach($users as $key => $user)
-    <ul><b> <a href='author.php?id={{$user->id}}}'>{{$user->firstname}} {{$user->lastname}}</a></b>
-    </ul>
+    <ul><b> <a href='author.php?id={{$user->id}}}'>{{$user->firstname}} {{$user->lastname}}</a>
+            @foreach($user->books as $book)
+                <li>{{$book->name}}</li>
+            @endforeach
+    </ul></b>
 @endforeach
 
 
