@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14ba0b9a-cbc0-4636-a02b-ed3965eb8846" name="Default Changelist" comment="" />
+    <list default="true" id="14ba0b9a-cbc0-4636-a02b-ed3965eb8846" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_27_145040_category_books.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_27_145040_category_books.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,9 +156,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-admin-panel.loc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\application" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -174,7 +184,7 @@
       <workItem from="1614422917644" duration="4785000" />
       <workItem from="1621935375104" duration="13000" />
       <workItem from="1621935389246" duration="42000" />
-      <workItem from="1621936197130" duration="343000" />
+      <workItem from="1621936197130" duration="3951000" />
     </task>
     <servers />
   </component>
