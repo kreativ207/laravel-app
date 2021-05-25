@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,11 @@ Route::group(['namespace' => 'App\Http\Controllers'], function(){
     Route::get('categories', 'StartController@categories');
 });
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware(['admin.middleware:admin,/home', 'role:admin'])->prefix('admin_panel')->group(function () {
+    Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
+});
 
