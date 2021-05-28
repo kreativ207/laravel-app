@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HomeController as HomeControl;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +30,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware(['admin.middleware:admin,/home', 'role:admin'])->prefix('admin_panel')->group(function () {
     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
+    Route::resource('/users', \App\Http\Controllers\Admin\UsersController::class);
 });
+
+/*Route::group(['middleware' => 'admin.middleware:admin,/home', 'role:admin', 'prefix' => 'admin_panel', 'namespace' => 'App\Http\Controllers\Admin'], function (){
+    Route::get('/', 'HomeController@index')->name('homeAdmin');
+    Route::get('/users', 'UsersController@index')->name('usersAdmin');
+});*/
 

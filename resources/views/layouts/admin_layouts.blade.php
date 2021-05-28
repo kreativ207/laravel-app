@@ -86,19 +86,19 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-newspaper"></i>
                             <p>
-                                Blog
+                                Users
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <p>All post</p>
+                                <a href="{{route('users.index')}}" class="nav-link">
+                                    <p>All users</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <p>Add post</p>
+                                <a href="{{route('users.create')}}" class="nav-link">
+                                    <p>Add user</p>
                                 </a>
                             </li>
                         </ul>
